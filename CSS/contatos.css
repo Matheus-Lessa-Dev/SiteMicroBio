@@ -143,6 +143,8 @@ main {
   .texto-contatos {
     font-size: 1.13rem;
     max-width: 89%;
+    
+    margin-right: 32px;
 
     & .conteudo-texto {
       color: var(--SeaGreen);
