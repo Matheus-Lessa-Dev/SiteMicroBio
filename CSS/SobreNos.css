@@ -1,8 +1,5 @@
 main {
   width: 100%;
-
-
-
 }
 
 .SobreNos {
@@ -92,15 +89,15 @@ main {
 }
 
   #titulo{
-    font-size: 4rem;
+    font-size: 40px;
     text-align: left;
     margin-bottom: 1.4rem;
     margin-top: 1rem;
     margin-left: 6rem;
   }
   #descricao{
-    font-size: 2rem;
-    margin-left: 4rem;
+    font-size: 1.5rem;
+    margin-left: 5rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
     width: 80%;
