@@ -51,7 +51,7 @@ main {
   margin-bottom: 8%;
 }
 
-.valores2 {
+.valoresDois {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,7 +112,7 @@ main {
     flex-direction: column;
     margin-left: 0;
   }
-  .Missao, .valores{
+  .Missao, .valoresDois{
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -174,7 +174,7 @@ main {
     flex-direction: column;
     margin-left: 0;
   }
-  .Missao, .valores{
+  .Missao, .valoresDois{
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -241,7 +241,7 @@ main {
     flex-direction: column;
     margin-left: 0;
   }
-  .Missao, .valores{
+  .Missao, .valoresDois{
     padding-left: 1rem;
     padding-right: 1rem;
   }
