@@ -1,11 +1,12 @@
 main {
   width: 100%;
-  margin-top: 3rem;
+
 
 
 }
 
 .SobreNos {
+  margin-top: 3rem;
   display: flex;
   align-items: center;
   margin-bottom: 2%;
