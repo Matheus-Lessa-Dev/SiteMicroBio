@@ -10,4 +10,7 @@ const URLunilab =
   if(document.getElementById("unilab-link-acessar")){
     document.getElementById("unilab-link-acessar").href = result.unilab;
   }
+  if(document.getElementById("unilab-link-mobile")){
+    document.getElementById("unilab-link-mobile").href = result.unilab;
+  }
 })();
