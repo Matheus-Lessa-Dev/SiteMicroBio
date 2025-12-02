@@ -144,7 +144,7 @@ main {
     font-size: 1.13rem;
     max-width: 89%;
     
-    margin-right: 32px;
+    margin-right: 35px;
 
     & .conteudo-texto {
       color: var(--SeaGreen);
