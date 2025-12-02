@@ -198,8 +198,8 @@ main {
   }
   #descricao{
     font-size: 1.5rem;
-    text-align: center;
-    margin-left: 1rem;
+    text-align: justify;
+    margin-left: 3rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
   }
@@ -220,14 +220,15 @@ main {
   #descricao{
     font-size: 1.5rem;
     text-align: center;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 3rem;
     margin-bottom: 1rem;
   }
   .banner {
     height: 100%;
     width: 100%;
     background-position: center;
+    align-items: center;
+    justify-content: center;
   }
   .textM {
     font-size: 1.2rem;
