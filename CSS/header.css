@@ -1,0 +1,197 @@
+.page-header--scrolled {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+
+  width: 80vw;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  z-index: 2;
+
+  background-color: #2d70738e;
+
+  border-radius: 48px;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(30px);
+
+  box-shadow: -10px -10px 20px -5px rgba(0, 0, 0, 0.2) inset,
+    10px 10px 20px -5px rgba(255, 255, 255, 0.2) inset;
+}
+
+.header-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  width: 100vw;
+  background-color: var(--SeaGreen);
+}
+
+.imagem-logo {
+  width: 200px;
+}
+
+.page-header__nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+}
+
+.page-header__nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+}
+
+.nav-link {
+  font-weight: normal;
+  text-decoration: none;
+  color: white;
+  font-size: 100%;
+}
+
+.page-header__login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--LightCyan);
+  border-radius: 12px;
+
+  width: 3rem;
+  height: 3rem;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .page-header {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .imagem-logo {
+    width: 150px;
+  }
+
+  .page-header--scrolled {
+    width: 90vw;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .page-header__nav {
+
+    gap: 1rem;
+  }
+
+  .nav-link {
+    font-size: 90%;
+  }
+
+  .page-header__login-button {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+/* MENU HAMBURGER (MOBILE)*/
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background: white;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  /* escondido */
+  width: 260px;
+  height: 100vh;
+  background: #144042;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 5rem 2rem;
+  z-index: 9999;
+  transition: left 0.3s ease;
+}
+
+.mobile-menu.active {
+  left: 0;
+}
+
+.mobile-link {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+  display: none;
+}
+
+.menu-overlay.active {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .page-header__login-button {
+    display: none;
+  }
+
+  .page-header__nav {
+    display: none;
+  }
+
+  .page-header__login-button2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--LightCyan);
+    border-radius: 12px;
+
+    width: 3rem;
+    height: 3rem;
+  }
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contatos</title>
+    <link rel="stylesheet" href="../CSS/root.css" />
+    <link rel="stylesheet" href="../CSS/header.css" />
+    <link rel="stylesheet" href="../CSS/footer.css" />
+    <link rel="stylesheet" href="../CSS/contatos.css" />
+    <script src="../JS/navBar.js" defer></script>
+    <script src="../JS/sanity/contatosSanity.js" defer></script>
+    <script src="../JS/sanity/footerSanity.js" defer></script>
+    <script src="../JS/sanity/unilabSanity.js" defer></script>
+    <script src="../JS/maps.js" defer></script>
+  </head>
+  <body>
+    <header class="header-div">
+      <div class="page-header" id="header">
+        <a href="../HTML/paginaInicial.html" class="page-header__logo">
+          <img
+            src="../image/microbio-logo.png"
+            class="imagem-logo"
+            alt="Logo da MicroBio"
+          />
+        </a>
+        <div class="page-header__nav-container">
+
+
+          <!-- Botão hambúrguer -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        
+          <nav class="page-header__nav">
+            <a href="../HTML/paginaInicial.html" class="nav-link">Home</a>
+            <a href="../HTML/servicos.html" class="nav-link">Serviços</a>
+            <a href="../HTML/Sobrenos.html" class="nav-link">Sobre nós</a>
+            <a href="" class="nav-link">Contato</a>
+          </nav>
+          <a
+            class="page-header__login-button"
+            aria-label="unilab"
+            id="unilab-link"
+          >
+            <img src="../image/Icon-user.svg" width="12" alt="Ícone de login" />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- MENU MOBILE FORA DO HEADER -->
+  <nav class="mobile-menu" id="mobile-menu">
+    <a href="../HTML/paginaInicial.html" class="mobile-link">Home</a>
+    <a href="../HTML/servicos.html" class="mobile-link">Serviços</a>
+    <a href="../HTML/Sobrenos.html" class="mobile-link">Sobre nós</a>
+    <a href="#" class="mobile-link">Contato</a>
+    <a class="page-header__login-button2" aria-label="unilab" id="unilab-link">
+      <img src="../image/Icon-user.svg" width="12" alt="Ícone de login" />
+    </a>
+  </nav>
+
+    <main id="contato-verificacao">
+      <section>
+        <div class="contato-icone-titulo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icone"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 22c-5.514 0-10-4.486-10-10s4.486-10 10-10 10 4.486 10 10-4.486 10-10 10zm0-18.8c-4.853 0-8.8 3.947-8.8 8.8s3.947 8.8 8.8 8.8 8.8-3.947 8.8-8.8-3.947-8.8-8.8-8.8zm0 15.05c-.689 0-1.25-.56-1.25-1.25s.561-1.25 1.25-1.25c.691 0 1.25.56 1.25 1.25s-.559 1.25-1.25 1.25zm1.961-5.928c-.904.975-.947 1.514-.935 2.178h-2.005c-.007-1.475.02-2.125 1.432-3.468.572-.544 1.024-.975.962-1.821-.058-.805-.73-1.226-1.364-1.226-.709 0-1.538.527-1.538 2.013h-2.011c0-2.4 1.41-3.95 3.59-3.95 1.036 0 1.942.339 2.551.955.57.578.865 1.372.854 2.298-.018 1.383-.859 2.291-1.536 3.021z"
+            />
+          </svg>
+          <p class="contatoTitle">Contato</p>
+        </div>
+      </section>
+      <section class="texto-dados-contatos">
+        <div class="texto-contatos">
+          <p class="titulo-texto">Onde a Ciência e o Campo se Encontram.</p>
+          <p class="conteudo-texto">
+            Nosso laboratório está localizado em um ponto estratégico, de fácil
+            acesso para receber suas amostras e para reuniões com nossa equipe
+            de especialistas. Venha nos visitar e conhecer a estrutura por trás
+            da precisão que impulsiona o seu agronegócio.
+          </p>
+        </div>
+        <div class="dados-contatos">
+          <div id="dados-endereco" class="dados-contato-class">
+            <div class="dados-contato-header">
+              <img src="../image/location-icon.svg" alt="Ícone de endereço" />
+              <h4>Endereço</h4>
+            </div>
+            <p class="dados-text" id="rua-cidade-cep"></p>
+          </div>
+          <div id="dados-funcionamento" class="dados-contato-class">
+            <div class="dados-contato-header">
+              <img src="../image/clock-icon.svg" alt="Ícone de horário" />
+              <h4>Horário de Funcionamento</h4>
+            </div>
+            <p class="dados-text" id="funcionamento"></p>
+          </div>
+          <div id="dados-contato" class="dados-contato-class">
+            <div class="dados-contato-header">
+              <img
+                src="../image/user2-icon.svg"
+                alt="Ícone de contato direto"
+              />
+              <h4>Contato Direto</h4>
+            </div>
+            <p class="dados-text" id="contato"></p>
+          </div>
+        </div>
+      </section>
+      <section class="mapa-forms">
+        <div class="maps">
+          <iframe id="map" class="maps-api"></iframe>
+          <p class="maps-texto">
+            (O mapa gerado com a localização de Toledo, PR. Clique no link para
+            facilitar a visualização)
+          </p>
+        </div>
+        <div class="forms-div">
+          <h4>Entre em contato</h4>
+
+          <form>
+            <input
+              class="forms-resposta"
+              style="grid-area: nome"
+              placeholder="NOME COMPLETO"
+              type="text"
+            />
+            <input
+              class="forms-resposta"
+              style="grid-area: gmail"
+              placeholder="GMAIL"
+              type="email"
+            />
+            <input
+              class="forms-resposta"
+              style="grid-area: telefone"
+              placeholder="TELEFONE"
+              type="tel"
+            />
+            <input
+              class="forms-resposta"
+              style="grid-area: idade"
+              placeholder="IDADE"
+              type="number"
+            />
+
+            <textarea
+              class="forms-resposta"
+              style="grid-area: assunto"
+              placeholder="ASSUNTO"
+            ></textarea>
+
+            <button type="submit" class="forms-botao" style="grid-area: botao">
+              ENVIAR
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="img-contact-footer">
+        <img src="../image/microbio-logo.png" alt="logo" class="logo" />
+        <div class="a"></div>
+        <div class="localizacao-footer" id="contatos-footer"></div>
+        <div class="a"></div>
+        <div class="contacts">
+          <div class="links">
+            <a id="insta-footer" href="#" target="_blank">
+              <img src="../image/instagram.png" alt="Instagram" class="icon" />
+            </a>
+            <a id="whats-footer" href="#" target="_blank">
+              <img src="../image/whats.png" alt="WhatsApp" class="icon" />
+            </a>
+            <a id="facebook-footer" href="#" target="_blank">
+              <img src="../image/facebook.jpg" alt="Facebook" class="icon" />
+            </a>
+          </div>
+          <div class="valores">
+            <div class="email-footer" id="email-footer"></div>
+            <div class="telefone-footer" id="telefone-footer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="cop_container">
+        <p class="cop">© 2025 MicroBio. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>

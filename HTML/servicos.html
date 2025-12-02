@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MicroBio</title>
+    <link rel="stylesheet" href="../CSS/root.css" />
+    <link rel="stylesheet" href="../CSS/header.css" />
+    <link rel="stylesheet" href="../CSS/servicos.css" />
+    <link rel="stylesheet" href="../CSS/footer.css" />
+    <script src="../JS/navbar.js" defer></script>
+    <script src="../JS/servicos.js" defer></script>
+    <script src="../JS/sanity/footerSanity.js" defer></script>
+    <script src="../JS/sanity/unilabSanity.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header-div">
+      <div class="page-header" id="header">
+        <a href="../HTML/paginaInicial.html" class="page-header__logo">
+          <img
+            src="../image/microbio-logo.png"
+            class="imagem-logo"
+            alt="Logo da MicroBio"
+          />
+        </a>
+        <div class="page-header__nav-container">
+
+          <!-- Botão hambúrguer -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        
+          <nav class="page-header__nav">
+            <a href="../HTML/paginaInicial.html" class="nav-link">Home</a>
+            <a href="#" class="nav-link">Serviços</a>
+            <a href="../HTML/Sobrenos.html" class="nav-link">Sobre nós</a>
+            <a href="../HTML/contatos.html" class="nav-link">Contato</a>
+          </nav>
+          <a
+            class="page-header__login-button"
+            aria-label="unilab"
+            id="unilab-link"
+          >
+            <img src="../image/Icon-user.svg" width="12" alt="Ícone de login" />
+          </a>
+        </div>
+      </div>
+    </header>
+
+     <!-- MENU MOBILE FORA DO HEADER -->
+  <nav class="mobile-menu" id="mobile-menu">
+    <a href="../HTML/paginaInicial.html" class="mobile-link">Home</a>
+    <a href="#" class="mobile-link">Serviços</a>
+    <a href="../HTML/Sobrenos.html" class="mobile-link">Sobre nós</a>
+    <a href="../HTML/contatos.html" class="mobile-link">Contato</a>
+    <a class="page-header__login-button2" aria-label="unilab" id="unilab-link">
+      <img src="../image/Icon-user.svg" width="12" alt="Ícone de login" />
+    </a>
+  </nav>
+
+    <main>
+      <div class="service_title">
+        <img src="../image/icon-services.svg" alt="" />
+        <h1>Serviços</h1>
+      </div>
+      <section class="hero" id="servicos">
+        <h1>Análise de solo</h1>
+        <p>
+          O solo é o seu ativo mais valioso. Entender o que ele precisa é o
+          primeiro passo para uma safra de sucesso. Com nossa análise de solo,
+          você substitui a incerteza pela ciência, tomando decisões precisas que
+          maximizam seu investimento e o potencial da sua lavoura.
+        </p>
+        <img src="../image/banner2.png" alt="imagem" />
+      </section>
+      <div class="exam_result">
+        <h1>Acesse seus resultados</h1>
+        <p>Consulte o status e os resultados de suas análises.</p>
+        <a
+          target="_blank"
+          id="unilab-link-acessar"
+          >Acessar</a
+        >
+      </div>
+    </main>
+    <!--TESTE APRENDENDO-->
+    <footer>
+      <div class="img-contact-footer">
+        <img src="../image/microbio-logo.png" alt="logo" class="logo" />
+        <div class="a"></div>
+        <div class="localizacao-footer" id="contatos-footer"></div>
+        <div class="a"></div>
+        <div class="contacts">
+          <div class="links">
+            <a id="insta-footer" href="#" target="_blank">
+              <img src="../image/instagram.png" alt="Instagram" class="icon" />
+            </a>
+            <a id="whats-footer" href="#" target="_blank">
+              <img src="../image/whats.png" alt="WhatsApp" class="icon" />
+            </a>
+            <a id="facebook-footer" href="#" target="_blank">
+              <img src="../image/facebook.jpg" alt="Facebook" class="icon" />
+            </a>
+          </div>
+          <div class="valores">
+            <div class="email-footer" id="email-footer"></div>
+            <div class="telefone-footer" id="telefone-footer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="cop_container">
+        <p class="cop">© 2025 MicroBio. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>

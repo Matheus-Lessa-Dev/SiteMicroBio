@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MicroBio</title>
+  <link rel="stylesheet" href="../CSS/root.css" />
+  <link rel="stylesheet" href="../CSS/header.css" />
+  <link rel="stylesheet" href="../CSS/home.css" />
+  <link rel="stylesheet" href="../CSS/footer.css" />
+  <script src="../JS/navBar.js" defer></script>
+  <script src="../JS/sanity/contatosSanity.js" defer></script>
+  <script src="../JS/sanity/unilabSanity.js" defer></script>
+  <script src="../JS/sanity/homeSanity.js" defer></script>
+  <script src="../JS/carrosel.js" defer></script>
+  <script src="../JS/sanity/footerSanity.js" defer></script>
+  <script src="../JS/maps.js" defer></script>
+</head>
+
+<body>
+  <header class="header-div">
+    <div class="page-header" id="header">
+      <a href="../HTML/paginaInicial.html" class="page-header__logo">
+        <img src="../image/microbio-logo.png" class="imagem-logo" alt="Logo da MicroBio" />
+      </a>
+
+      <div class="page-header__nav-container">
+
+        <!-- Botão hambúrguer -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <nav class="page-header__nav">
+            <a href="#" class="nav-link">Home</a>
+            <a href="../HTML/servicos.html" class="nav-link">Serviços</a>
+            <a href="../HTML/Sobrenos.html" class="nav-link">Sobre nós</a>
+            <a href="../HTML/contatos.html" class="nav-link">Contato</a>
+        </nav>
+
+        <a class="page-header__login-button" aria-label="unilab" id="unilab-link">
+          <img src="../image/Icon-user.svg" width="12" alt="Ícone de login" />
+        </a>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- MENU MOBILE FORA DO HEADER -->
+  <nav class="mobile-menu" id="mobile-menu">
+    <a href="#" class="mobile-link">Home</a>
+    <a href="../HTML/servicos.html" class="mobile-link">Serviços</a>
+    <a href="../HTML/Sobrenos.html" class="mobile-link">Sobre nós</a>
+    <a href="../HTML/contatos.html" class="mobile-link">Contato</a>
+    <a class="page-header__login-button2" aria-label="unilab" id="unilab-link">
+      <img src="../image/Icon-user.svg" width="12" alt="Ícone de login" />
+    </a>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero__content">
+        <h1 class="hero__title">
+          Laboratório MicroBio: Precisão e tecnologia que geram confiança em
+          cada resultado.
+        </h1>
+      </div>
+    </section>
+    <section class="services" id="servicos">
+      <div class="services__intro">
+        <h2 class="section-title">
+          Inteligência Laboratorial para o Sucesso do Seu Agronegócio
+        </h2>
+      </div>
+      <div class="services__grid">
+        <p class="section-subtitle">
+          No Laboratório MicroBio, traduzimos ciência em resultados práticos.
+          Oferecemos um portfólio completo de análises e pesquisas que
+          fornecem dados precisos para otimizar sua produção, garantir a
+          qualidade e impulsionar a inovação em todas as etapas da sua
+          operação. Conheça nossas principais frentes de atuação:
+        </p>
+        <div class="carousel-wrapper">
+          <button class="prev" id="prev">◀</button>
+          <div class="services__cards" id="news-cards">
+            <!-- 
+          <article class="service-card">
+            <img class="service-card__icon" src="URL" alt="titulo" />
+            <div class="service-card__content">
+              <h3 class="service-card__title">titulo</h3>
+              <p class="service-card__description">descricao</p>
+            </div> 
+          </article>-->
+          </div>
+          <button class="next" id="next">▶</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="location">
+      <div class="location__map">
+        <iframe id="map" class="maps-api"></iframe>
+        <div class="location__directions">
+          <p>
+            (O mapa gerado com a localização de Toledo, PR. Clique no link
+            para facilitar a visualização)
+          </p>
+        </div>
+      </div>
+
+      <div class="location__info">
+        <div class="location__intro">
+          <h2 class="section-title">Onde a Ciência e o Campo se Encontram</h2>
+          <p class="section-subtitle">
+            Nosso laboratório está localizado em um ponto estratégico, de
+            fácil acesso para receber suas amostras e para reuniões com nossa
+            equipe de especialistas. Venha nos visitar e conhecer a estrutura
+            por trás da precisão que impulsiona o seu agronegócio.
+          </p>
+        </div>
+        <div class="contact-details">
+          <div class="contact-details__item">
+            <div class="contact-details__item-header">
+              <img src="../image/location-icon.svg" alt="Ícone de endereço" class="icons-contact" />
+              <h4>Endereço:</h4>
+            </div>
+            <p id="rua-cidade-cep"></p>
+          </div>
+          <div class="contact-details__item">
+            <div class="contact-details__item-header">
+              <img src="../image/clock-icon.svg" alt="Ícone de horário" class="icons-contact" />
+              <h4>Horário de Funcionamento:</h4>
+            </div>
+            <p id="funcionamento"></p>
+          </div>
+          <div class="contact-details__item">
+            <div class="contact-details__item-header">
+              <img src="../image/user2-icon.svg" alt="Ícone de contato direto" class="icons-contact" />
+              <h4>Contato Direto:</h4>
+            </div>
+            <p id="contato"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="img-contact-footer">
+      <img src="../image/microbio-logo.png" alt="logo" class="logo" />
+      <div class="a"></div>
+      <div class="localizacao-footer" id="contatos-footer"></div>
+      <div class="a"></div>
+      <div class="contacts">
+        <div class="links">
+          <a id="insta-footer" class="a_icon" href="#" target="_blank">
+            <img src="../image/instagram.svg" alt="Instagram" class="icon" />
+          </a>
+          <a id="whats-footer" class="a_icon" href="#" target="_blank">
+            <img src="../image/whats.svg" alt="WhatsApp" class="icon" />
+          </a>
+          <a id="facebook-footer" class="a_icon" href="#" target="_blank">
+            <img src="../image/facebook.svg" alt="Facebook" class="icon" />
+          </a>
+        </div>
+        <div class="valores">
+          <div class="email-footer" id="email-footer"></div>
+          <div class="telefone-footer" id="telefone-footer"></div>
+        </div>
+      </div>
+    </div>
+    <div class="cop_container">
+      <p class="cop">© 2025 MicroBio. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

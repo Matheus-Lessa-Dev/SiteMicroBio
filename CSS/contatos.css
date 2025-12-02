@@ -1,0 +1,502 @@
+main {
+  width: 100%;
+  margin-top: 3rem;
+  margin-left: 8rem;
+  margin-bottom: 3rem;
+}
+/*Section 1*/
+/*Contato inicial*/
+.contato-icone-titulo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2%;
+  gap: 1%;
+
+  & .contatoTitle {
+    font-size: 32px;
+    font-weight: 400;
+  }
+  & .icone {
+    width: 40px;
+    height: 40px;
+  }
+}
+/*Section 2*/
+/*Texto inicial + contatos - endereço/hora func e contato direto*/
+.texto-dados-contatos {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5%;
+}
+/*Texto inicial - Onde a ciencia...*/
+.texto-contatos {
+  font-size: 1.7rem;
+  text-align: justify;
+
+  max-width: 30%;
+  margin-left: 1rem;
+
+  & .conteudo-texto {
+    color: var(--SeaGreen);
+    font-size: 1.4rem;
+    margin-top: 8%;
+  }
+}
+/*Text contato - endereço/hora func e contato direto*/
+.dados-contatos {
+  background-color: var(--LightCyan);
+  width: 53%;
+  padding: 0.5rem;
+
+  border-radius: 1rem;
+  padding: 0rem 1rem 1rem 1rem;
+
+  margin-right: 15%;
+  margin-left: 4rem;
+
+  & h4 {
+    font-size: 1.3rem;
+    color: var(--DarkSlateGray);
+  }
+  & img {
+    width: 2rem;
+    height: 2rem;
+  }
+  & .dados-contato-header {
+    display: flex;
+    gap: 3%;
+    margin-top: 3%;
+  }
+  & .dados-text {
+    min-height: 40px;
+    color: var(--SeaGreen);
+  }
+}
+/*Responsividade contatos*/
+@media screen and (max-width: 768px) {
+  .texto-dados-contatos {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+  }
+  .texto-contatos {
+    font-size: 1.5rem;
+    max-width: 70%;
+
+    & .conteudo-texto {
+      color: var(--SeaGreen);
+      font-size: 1.108rem;
+      margin-top: 3%;
+    }
+  }
+  .dados-contatos {
+    background-color: var(--LightCyan);
+    width: 70%;
+
+    border-radius: 1rem;
+    padding: 0rem 1rem 1rem 1rem;
+
+    margin-left: 0.5rem;
+
+    & h4 {
+      font-size: 1.3rem;
+      color: var(--DarkSlateGray);
+    }
+    & img {
+      width: 1.7rem;
+      height: 1.7rem;
+    }
+    & .dados-contato-header {
+      display: flex;
+      gap: 3%;
+      margin-top: 3%;
+    }
+    & .dados-text {
+      color: var(--SeaGreen);
+    }
+  }
+}
+@media screen and (max-width: 426px) {
+  main {
+    width: 100%;
+    margin-top: 3rem;
+    margin-left: 1rem;
+  }
+  .contato-icone-titulo {
+    display: flex;
+    margin-bottom: 2%;
+    gap: 1%;
+
+    & .contatoTitle {
+      font-size: 25px;
+    }
+    & .icone {
+      width: 33px;
+      height: 33px;
+    }
+  }
+  .texto-dados-contatos {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+  }
+  .texto-contatos {
+    font-size: 1.13rem;
+    max-width: 89%;
+
+    & .conteudo-texto {
+      color: var(--SeaGreen);
+      font-size: 1rem;
+      margin-top: 2%;
+    }
+  }
+  .dados-contatos {
+    background-color: var(--LightCyan);
+    width: 89%;
+
+    border-radius: 1rem;
+    padding: 0rem 1rem 1rem 1rem;
+
+    & h4 {
+      color: var(--DarkSlateGray);
+      font-size: 0.9rem;
+    }
+    & img {
+      width: 1.3rem;
+      height: 1.3rem;
+    }
+    & .dados-contato-header {
+      display: flex;
+      gap: 3%;
+      margin-top: 3%;
+    }
+    & .dados-text {
+      color: var(--SeaGreen);
+      font-size: 0.8rem;
+    }
+  }
+}
+/*Section 3*/
+/*Maps + forms de imput com botão*/
+.mapa-forms {
+  display: flex;
+  justify-content: flex-start;
+
+  margin-left: 0.5rem;
+}
+/*Maps + texto em baixo dele */
+.maps {
+  & .maps-api {
+    width: 600px;
+    height: 450px;
+
+    border: 0;
+    border-radius: 20px;
+  }
+  & p.maps-texto {
+    margin-top: 0.3rem;
+    color: var(--SeaGreen);
+    font-size: 1rem;
+    width: 84%;
+  }
+}
+/*Formulario*/
+.forms-div {
+  width: 46%;
+  padding: 1rem;
+  margin-right: 15%;
+  /*Titulo forms*/
+  & h4 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+  /*Grid pra posição*/
+  & form {
+    display: grid;
+    grid-template-areas:
+      "nome nome"
+      "gmail gmail"
+      "telefone idade"
+      "assunto assunto"
+      "botao botao";
+
+    gap: 20px;
+  }
+  /*Forms em si*/
+  & form {
+    /*Input geral do forms*/
+    & .forms-resposta {
+      background-color: var(--LightCyan);
+      color: var(--DarkSlateGray);
+
+      border: none;
+      outline: none;
+      width: 100%;
+      box-sizing: border-box;
+
+      border-radius: 20px;
+      padding: 18px 25px;
+
+      box-shadow: inset -3px -5px 10px rgba(0, 0, 0, 0.153);
+
+      font-size: 0.9rem;
+      font-weight: 300;
+
+      resize: none;
+
+      /*Tira as setas pra aumentar e diminuir os input number*/
+      &::-webkit-inner-spin-button,
+      &::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+  }
+  /*Muda a area do input de assunto*/
+  & .textarea.forms-resposta {
+    border-radius: 25px;
+    min-height: 100px;
+  }
+  /*Muda o placeholder dos input*/
+  & .forms-resposta::placeholder {
+    color: var(--DarkSlateGray);
+    text-transform: uppercase;
+    opacity: 0.8;
+  }
+  /*Muda o botao - faz ele pular, respectivamente*/
+  & .forms-botao {
+    background-color: #5a8f8a;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 18px 25px;
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+
+    justify-self: center;
+    width: 50%;
+    min-width: 200px;
+
+    transition: all 0.2s ease-in-out;
+  }
+  & .forms-botao:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+}
+/*Responsividade maps e forms*/
+@media screen and (max-width: 768px) {
+  .mapa-forms {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 0.5rem;
+  }
+  .maps {
+    & .maps-api {
+      width: 70%;
+      height: 400px;
+
+      border: 0;
+      border-radius: 20px;
+    }
+    & p.maps-texto {
+      color: var(--SeaGreen);
+      font-size: 1rem;
+      width: 70%;
+    }
+  }
+  .forms-div {
+    width: 72%;
+    /*Titulo forms*/
+    & h4 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+    /*Grid pra posição*/
+    & form {
+      display: grid;
+      grid-template-areas:
+        "nome nome"
+        "gmail gmail"
+        "telefone idade"
+        "assunto assunto"
+        "botao botao";
+
+      gap: 12px;
+    }
+    /*Forms em si*/
+    & form {
+      /*Input geral do forms*/
+      & .forms-resposta {
+        background-color: var(--LightCyan);
+        color: var(--DarkSlateGray);
+
+        border: none;
+        outline: none;
+        width: 100%;
+        box-sizing: border-box;
+
+        border-radius: 20px;
+        padding: 12px 25px;
+
+        box-shadow: inset -3px -5px 10px rgba(0, 0, 0, 0.153);
+
+        font-size: 0.8rem;
+        font-weight: 300;
+
+        /*Tira as setas pra aumentar e diminuir os input number*/
+        &::-webkit-inner-spin-button,
+        &::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+      }
+    }
+    /*Muda a area do input de assunto*/
+    & .textarea.forms-resposta {
+      border-radius: 25px;
+    }
+    /*Muda o placeholder dos input*/
+    & .forms-resposta::placeholder {
+      color: var(--DarkSlateGray);
+      text-transform: uppercase;
+      opacity: 0.8;
+    }
+    /*Muda o botao - faz ele pular, respectivamente*/
+    & .forms-botao {
+      background-color: #5a8f8a;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      padding: 12px 25px;
+      font-weight: 400;
+      font-size: 1rem;
+      text-transform: uppercase;
+      cursor: pointer;
+
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+
+      justify-self: center;
+      width: 50%;
+      min-width: 200px;
+
+      transition: all 0.2s ease-in-out;
+    }
+    & .forms-botao:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+@media screen and (max-width: 426px) {
+  .mapa-forms {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 0.5rem;
+  }
+  .maps {
+    & .maps-api {
+      width: 91%;
+      height: 400px;
+
+      border: 0;
+      border-radius: 20px;
+    }
+    & p.maps-texto {
+      color: var(--SeaGreen);
+      font-size: 0.8rem;
+      width: 91%;
+    }
+  }
+  .forms-div {
+    width: 93%;
+    /*Titulo forms*/
+    & h4 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+    /*Grid pra posição*/
+    & form {
+      display: grid;
+      grid-template-areas:
+        "nome nome"
+        "gmail gmail"
+        "telefone idade"
+        "assunto assunto"
+        "botao botao";
+
+      gap: 12px;
+    }
+    /*Forms em si*/
+    & form {
+      /*Input geral do forms*/
+      & .forms-resposta {
+        background-color: var(--LightCyan);
+        color: var(--DarkSlateGray);
+
+        border: none;
+        outline: none;
+        width: 100%;
+        box-sizing: border-box;
+
+        border-radius: 20px;
+        padding: 12px 25px;
+
+        box-shadow: inset -3px -5px 10px rgba(0, 0, 0, 0.153);
+
+        font-size: 0.8rem;
+        font-weight: 300;
+
+        /*Tira as setas pra aumentar e diminuir os input number*/
+        &::-webkit-inner-spin-button,
+        &::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+      }
+    }
+    /*Muda a area do input de assunto*/
+    & .textarea.forms-resposta {
+      border-radius: 25px;
+    }
+    /*Muda o placeholder dos input*/
+    & .forms-resposta::placeholder {
+      color: var(--DarkSlateGray);
+      text-transform: uppercase;
+      opacity: 0.8;
+    }
+    /*Muda o botao - faz ele pular, respectivamente*/
+    & .forms-botao {
+      background-color: #5a8f8a;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      padding: 12px 25px;
+      font-weight: 400;
+      font-size: 1rem;
+      text-transform: uppercase;
+      cursor: pointer;
+
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+
+      justify-self: center;
+      width: 50%;
+      min-width: 200px;
+
+      transition: all 0.2s ease-in-out;
+    }
+    & .forms-botao:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
