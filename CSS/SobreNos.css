@@ -51,15 +51,6 @@ main {
   margin-bottom: 8%;
 }
 
-.valores {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 4.5rem;
-    padding-right: 4.5rem;
-    margin-bottom: 8%;
-
-}
 
 .H2V {
   font-size: 40px;
